@@ -32,13 +32,13 @@ body {
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    border: 10px solid rgb(0, 0, 0);
     text-align: center;
     display: block;
     margin: 0px auto;
     width: 1111px;
     height: 200px;
-    
+    background-image: url(../images/Background2.png);
 
 }
 
@@ -105,4 +105,28 @@ a:hover {
 
 #bret:hover, #jemaine:hover, #murray:hover, #mel:hover {
     background-position-y: -100px;
+}
+
+
+.lightbox1 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.85);
+    background-image: url(../images/Cap_LB_Bg.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000; 
+    display: none;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;  
 }
