@@ -134,7 +134,7 @@ article p, #instructions p {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color:rgba(104, 173, 40, 0.75);
+    background-color:rgba(104, 173, 40, 0.85);
     background-image: url(../images/jemaine.jpg);
     border-color: 5px solid black;
     background-repeat: no-repeat;
