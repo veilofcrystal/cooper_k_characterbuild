@@ -21,6 +21,9 @@ body {
     display: none;
 }
 
+h2 {
+    text-align: center;
+}
 .banner {
     width: 1111px;
     height: 450px;
@@ -54,13 +57,6 @@ a:hover {
     
 }
 
-.container {
-    width: 1111px;
-    text-align: center;
-    display: block;
-    margin: 0px auto;
-    
-}
 
 .cast {
     list-style-type: none;
@@ -141,55 +137,26 @@ article p, #instructions p {
     background-size: 55vh;
     background-position: 545px bottom;
     z-index: 1000; 
-
+    
 }
 
-.lightbox2 {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color:rgba(104, 173, 40, 0.75);
+#lightbox2 {
     background-image: url(../images/bret.jpg);
-    border-color: 5px solid black;
-    background-repeat: no-repeat;
-    background-size: 55vh;
-    background-position: 625px bottom;
-    z-index: 1000; 
-
+    background-position: 625px bottom; 
 }
 
-.lightbox3 {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color:rgba(104, 173, 40, 0.75);
+#lightbox3 {
     background-image: url(../images/murray.jpg);
-    border-color: 5px solid black;
-    background-repeat: no-repeat;
-    background-size: 55vh;
-    background-position: 705px bottom;
-    z-index: 1000; 
-
+    background-position: 705px bottom; 
 }
 
-.lightbox4 {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color:rgba(104, 173, 40, 0.75);
+#lightbox4 {
     background-image: url(../images/mel_jemaine_tshirt.jpg);
-    border-color: 5px solid black;
-    background-repeat: no-repeat;
-    background-size: 55vh;
-    background-position: 785px bottom;
-    z-index: 1000; 
+    background-position: 785px bottom;   
+}
 
+#lightbox1, #lightbox2, #lightbox3, #lightbox4 {
+    display: none;
 }
 
 .lightbox_close {
@@ -227,7 +194,7 @@ article p, #instructions p {
 }
 
 .lightbox:target {
-    display: block;
+    display: block !important;
 }
 
 footer {
