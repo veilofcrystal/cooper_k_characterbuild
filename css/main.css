@@ -32,13 +32,13 @@ body {
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    border: 10px solid rgb(0, 0, 0);
     text-align: center;
     display: block;
     margin: 0px auto;
     width: 1111px;
     height: 200px;
-    
+    background-image: url(../images/Background2.png);
 
 }
 
@@ -85,6 +85,26 @@ a:hover {
     box-shadow: 0 220px 0 0 black inset;
 }
 
+
+article, #instructions {
+    padding: 20px;
+}
+
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+    
+}
+
+article p, #instructions p {
+     width: 80%;
+     font-size: 18px;
+     text-align: center;
+     margin:0px auto;
+    
+}
+
 .sprite {
     width: 100px;
     height: 100px;
@@ -105,4 +125,113 @@ a:hover {
 
 #bret:hover, #jemaine:hover, #murray:hover, #mel:hover {
     background-position-y: -100px;
+}
+
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(104, 173, 40, 0.75);
+    background-image: url(../images/jemaine.jpg);
+    border-color: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 545px bottom;
+    z-index: 1000; 
+
+}
+
+.lightbox2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(104, 173, 40, 0.75);
+    background-image: url(../images/bret.jpg);
+    border-color: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 625px bottom;
+    z-index: 1000; 
+
+}
+
+.lightbox3 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(104, 173, 40, 0.75);
+    background-image: url(../images/murray.jpg);
+    border-color: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 705px bottom;
+    z-index: 1000; 
+
+}
+
+.lightbox4 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:rgba(104, 173, 40, 0.75);
+    background-image: url(../images/mel_jemaine_tshirt.jpg);
+    border-color: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 785px bottom;
+    z-index: 1000; 
+
+}
+
+.lightbox_close {
+    position: relative;
+    top: 10px;
+    left: 95%;
+    color: rgb(11, 11, 11);
+    font-size: 45px;
+    text-decoration: dashed;
+    font-weight: 600;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: rgb(255, 0, 242);
+}
+
+.lightbox article, .lightbox2 article, .lightbox3 article, .lightbox4 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+
+}
+
+
+.lb_text {
+    margin-left: 0;
+    padding-top: 32px;
+    line-height: 1.6 !important;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;  
 }
